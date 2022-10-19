@@ -1,0 +1,279 @@
+/*#region HEADER */
+
+.header
+{
+    grid-area: header;
+
+    background-color: var(--extremes-bg-color);
+}
+
+.header-title
+{
+    text-align: center;
+
+    height: 10vh;
+    margin: auto;
+    padding: 5px;
+
+    color: var(--main-title-color);
+}
+
+#nick
+{
+    font-family: "AstroBoy";
+    color: var(--header-title-color);
+}
+
+/*#endregion */
+
+/*#region ASTRO */
+
+.astro
+{
+    grid-area: astro;
+
+    background-image: var(--astro-bg-img);
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 80vh;
+}
+
+/*#endregion */
+
+/*#region NAV */
+
+.nav
+{
+    grid-area: nav;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--extremes-bg-color);
+    
+
+    height: 10vh;
+}
+
+.nav-list-elements
+{
+    float: left;
+    margin-left: 10px;
+}
+
+.nav-list-links
+{
+    color: var(--main-title-color);
+}
+
+.nav-list-links:hover
+{
+    color: var(--header-title-color);
+}
+
+/*#endregion */
+
+/*#region MAIN */
+
+.main
+{
+    grid-area: main;
+
+    text-align: justify;
+
+    padding: 10px 30px;
+}
+
+.main-titles
+{
+    font-family: var(--main-title-font);
+    color: var(--main-title-color);
+    font-weight: bolder;
+}
+
+.midia
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conquista-imgs
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.conquistas-list
+{
+    padding-left: 20px;
+}
+
+.conquistas-list-elements
+{
+    padding: 3px 0px;
+}
+
+#nova-FaZe-img
+{
+    width: 400px;
+    height: 250px;
+}
+
+#video
+{
+    width: 320px; 
+    height: 240px;
+}
+
+#amigos-img, #campea-img
+{
+    width: 220px;
+    height: 170px;
+
+    padding: 10px 15px;
+}
+
+/*#endregion */
+
+/*#region PLAYER INFO */
+
+.player-info
+{
+    grid-area: playerInfo;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.pi-table
+{
+    background-color: var(--pi-table-color);
+}
+
+.pi-table-elements
+{
+    background-color: var(--pi-table-elements-color);
+}
+
+.pi-table, .pi-table-elements
+{ 
+    border: 1px solid black;
+}
+
+.pi-bold
+{
+    font-weight: bolder;
+}
+
+#pi-table-header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pi-table-title-img
+{
+    padding-top: 3px;
+}
+
+#pi-table-img
+{
+    width: 200px;
+    height: 120px;
+}
+
+#br-logo
+{
+    width: 12px;
+    height: 10px;
+}
+
+/*#endregion */
+
+/*#region FOOTER */ 
+
+.footer
+{
+    grid-area: footer;
+
+    background-color: var(--extremes-bg-color);
+}
+
+.footer-content
+{
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+.footer-social-midias
+{
+    margin: auto 0px;
+}
+
+.footer-logos
+{
+    width: 20px;
+    margin: 10px;
+}
+
+.footer-copy
+{
+    text-align: right;
+}
+
+.footer-title
+{
+    margin: 15px;
+    padding: 10px;
+}
+
+/*#endregion */
+
+@media (min-width: 800px)
+{
+    /*#region MAIN */
+
+    #nova-FaZe-img
+    {
+        width: 500px;
+        height: 350px;
+    }
+
+    #video
+    {
+        width: 420px; 
+        height: 340px;
+    }
+
+    #amigos-img, #campea-img
+    {
+        width: 320px;
+        height: 270px;
+
+        padding: 10px 15px;
+    }
+
+    /*#endregion */
+
+    /*#region PLAYER INFO */
+
+    .player-info
+    {
+        justify-content: flex-start;
+
+        padding-top: 32px;
+    }
+
+    /*#endregion */
+}

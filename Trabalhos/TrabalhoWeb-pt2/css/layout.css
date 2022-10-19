@@ -1,0 +1,31 @@
+.container
+{
+    display: grid;
+
+    font-family: var(--text-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    grid-template-areas: 
+        "header"
+        "astro"
+        "nav"
+        "main"
+        "playerInfo"
+        "footer"
+    ;
+}
+
+@media (min-width: 800px)
+{
+    .container
+    {
+        grid-template-areas: 
+            "header  header  header"
+            "astro   astro   astro"
+            "nav     nav     nav"
+            "main    main    playerInfo"
+            "footer  footer  footer"
+        ;
+    }
+}

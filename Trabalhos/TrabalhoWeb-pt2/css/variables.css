@@ -1,0 +1,40 @@
+:root
+{
+    /*#region Colors */ 
+
+    --bg-color: #400101;
+    --extremes-bg-color: #0D0D0D;
+    --text-color: #c0c0c0;
+    --header-title-color: rgb(155, 0, 0);
+    --main-title-color: #F2F2F0;
+    --pi-table-color: #8C0303;
+    --pi-table-elements-color: #8C2D2D;
+
+    --reserva1: #082A40;
+    --reserva2: #0A5A8C;
+
+    /*#endregion */
+
+    /*#region Fonts */
+
+    --text-font: "Play", sans-serif;
+    --main-title-font: "Cinzel", serif;
+
+    /*#endregion */
+
+    /*#region Images */
+
+    --astro-bg-img: url(../imgs/astro_01.jpg);
+
+    /*#endregion */
+}
+
+/* External Fonts */
+
+@font-face {
+    font-family: "AstroBoy";
+    src: url("../fonts/roboclone3d.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: normal;
+}
